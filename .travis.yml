@@ -8,14 +8,19 @@ sudo: false
 #  - oraclejdk8
 
 before_install:
+
+
+    
 # does not seem to work anymore on April, 3rd, 2017 (JPM down?)
 #  - curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar >jpm4j.jar
 #  - java -jar jpm4j.jar -u init
 #  - ~/jpm/bin/jpm install com.codacy:codacy-coverage-reporter:assembly
 
+
+
 script:
   - gradlew check
-  - chmod a+x ./gradlew
+
 
 after_success:
 # does not seem to work anymore on April, 3rd, 2017 (JPM down?)
@@ -23,4 +28,3 @@ after_success:
 
 cache:
   directories:
-    - '$HOME/.sonar/cache'
