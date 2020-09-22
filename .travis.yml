@@ -13,7 +13,7 @@ before_install:
 
 
 script:
-  - gradlew check
+  - ./gradlew check
 
 
 after_success:
