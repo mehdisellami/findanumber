@@ -15,6 +15,7 @@ before_install:
 
 script:
   - gradlew check
+  - chmod a+x gradlew
 
 after_success:
 # does not seem to work anymore on April, 3rd, 2017 (JPM down?)
